@@ -4,7 +4,8 @@ How to install packages
 
 Hybrid Custom Framework to Test the REST APIs
 
-Screenshot 2023-12-08 at 8 20 27 AM
+![288948194-a09647ad-720b-4afb-8d33-b69e4710cee4](https://github.com/Praveenvrao/APIFrameworkproject1/assets/147286492/5fe42604-f94e-452a-97f2-17a08a9b27e6)
+
 
 Tech Stack
 Python 3.11
