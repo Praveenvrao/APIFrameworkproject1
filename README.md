@@ -14,6 +14,7 @@ PyTest - Testing Framework
 Reporting - Allure Report, PyTest HTML
 Test Data - CSV, Excel, JSON
 Parallel Execution - x distribute
+
 How to Install Packages
 pip install requests pytest pytest-html faker allure-pytest jsonschema
 
@@ -28,8 +29,8 @@ pip install pytest-xdist
 
 pytest -n auto tests/integration_test/test_create_booking.py -s -v 
 
-To Work with the Excel
-pip install openpyxl
+**To Work with the Excel
+**pip install openpyxl
 
 To work wit JSON Schema
 pip install jsonschema
