@@ -11,7 +11,7 @@ from source.Helpers.Payload_manager import payload_create_booking, payload_creat
 
 
 # class test_crud1(object):
-def create_token1():
+def test_create_token1():
     response = post_request(url=fun_create_token(), auth=None, headers=verify_common_headers_json(),
                             Payload=payload_create_token(), in_json=False)
     verify_status_code(response, expect_data=200)
@@ -21,12 +21,11 @@ def create_token1():
     print(token)
     return token
 
-
-def test_create_book1():
-    response = post_request(url=fun_create_booking(), auth=None, headers=verify_common_headers_json(),
-                            Payload=payload_create_booking(), in_json=False)
-    print(response)
-    verify_status_code(response, 200)
-    bookid = response.json()["bookingid"]
-    verify_response_key_should_not_be_none(bookid)
-    print(bookid)
+    def test_create_book1():
+        response = post_request(url=fun_create_booking(), auth=None, headers=verify_common_headers_json(),
+                                Payload=payload_create_booking(), in_json=False)
+        print(response)
+        verify_status_code(response, 200)
+        bookid = response.json()["bookingid"]
+        verify_response_key_should_not_be_none(bookid)
+        print(bookid)

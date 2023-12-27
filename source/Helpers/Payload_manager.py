@@ -1,4 +1,6 @@
 #Payload manager
+import requests
+import pytest
 
 def payload_create_booking():
     payload = {
@@ -21,4 +23,6 @@ def payload_create_token():
         "password": "password123"
     }
     return payload
+
+
 
